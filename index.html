@@ -3,157 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tribal View | App Overview</title>
+    <title>Stompai | Mobile Apps</title>
     <meta
       name="description"
-      content="Tribal View helps teams stay aligned with fast access to updates, visibility, and action in one place."
+      content="Stompai builds focused, beautifully crafted mobile apps. Discover TribeView, BellaLingua, and more on Google Play."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
-        <nav class="topbar">
-          <div class="brand">Tribal View</div>
-          <a class="nav-link" href="#overview">Overview</a>
-        </nav>
+    <div class="noise"></div>
 
-        <div class="hero-copy">
-          <p class="eyebrow">Google Play app website</p>
-          <h1>See what matters. Act without the noise.</h1>
-          <p class="lede">
-            Tribal View gives your team a clearer picture of activity, updates,
-            and next steps through a focused mobile experience built for speed.
-          </p>
+    <nav class="topbar">
+      <div class="topbar-inner">
+        <a href="/" class="brand">
+          <span class="brand-icon">S</span>
+          <span>stompai</span>
+        </a>
+        <div class="nav-links">
+          <a href="#apps">Apps</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </nav>
 
-          <div class="hero-actions">
-            <a class="button primary" href="https://play.google.com/store" target="_blank" rel="noreferrer">
-              View on Google Play
-            </a>
-            <a class="button secondary" href="#features">Explore features</a>
-          </div>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Google Play &mdash; Stompai</p>
+        <h1>Apps that respect your time <span class="gradient-text">&amp; your data.</span></h1>
+        <p class="lede">
+          We build focused mobile tools that do one thing well. No bloat, no tracking beyond basic analytics, no selling your data. Ever.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#apps">Explore our apps</a>
+          <a class="btn btn-ghost" href="privacy.html">Privacy policy</a>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </header>
+
+    <main>
+      <section class="apps-section" id="apps">
+        <div class="section-header">
+          <p class="eyebrow">Our Apps</p>
+          <h2>Crafted for clarity</h2>
         </div>
 
-        <section class="hero-card" aria-label="Application highlights">
-          <div class="stat">
-            <span class="stat-label">Built for</span>
-            <strong>Fast mobile updates</strong>
-          </div>
-          <div class="stat">
-            <span class="stat-label">Focus</span>
-            <strong>Visibility and action</strong>
-          </div>
-          <div class="stat">
-            <span class="stat-label">Experience</span>
-            <strong>Simple, readable, responsive</strong>
-          </div>
-        </section>
-      </header>
-
-      <main>
-        <section class="section intro" id="overview">
-          <div class="section-heading">
-            <p class="eyebrow">Overview</p>
-            <h2>A lightweight landing page for your store presence</h2>
-          </div>
-          <p class="section-copy">
-            This site is structured for a Google Play listing requirement: it
-            explains what the app does, who it serves, and where users can go
-            for support and privacy details.
-          </p>
-        </section>
-
-        <section class="section grid-section" id="features">
-          <div class="section-heading">
-            <p class="eyebrow">Core features</p>
-            <h2>Present the product clearly in a few seconds</h2>
-          </div>
-
-          <div class="feature-grid">
-            <article class="panel">
-              <h3>Clear daily overview</h3>
+        <div class="app-grid">
+          <article class="app-card">
+            <div class="app-card-icon tribeview-icon">TV</div>
+            <div class="app-card-body">
+              <h3>TribeView</h3>
+              <p class="app-tagline">See what matters. Act without the noise.</p>
               <p>
-                Give users a fast summary of the most important activity without
-                making them dig through screens.
+                A focused mobile experience that gives your team a clear picture of activity, updates, and next steps &mdash; built for speed and simplicity.
               </p>
-            </article>
-            <article class="panel">
-              <h3>Focused actions</h3>
-              <p>
-                Move people from awareness to action with a streamlined mobile
-                flow that reduces friction.
-              </p>
-            </article>
-            <article class="panel">
-              <h3>Reliable visibility</h3>
-              <p>
-                Help teams stay aligned through a shared view of updates,
-                priorities, and status.
-              </p>
-            </article>
-            <article class="panel">
-              <h3>Responsive design</h3>
-              <p>
-                The page adapts cleanly to phones and desktop browsers, which is
-                useful for both store review and direct sharing.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section split-section">
-          <article class="panel large">
-            <p class="eyebrow">Why this page exists</p>
-            <h2>Useful for both GitHub Pages and GitLab Pages</h2>
-            <p>
-              The site is plain static HTML and CSS, so you can host it in a
-              GitHub repository or publish it through GitLab Pages with the
-              included pipeline file.
-            </p>
+              <a
+                class="btn btn-primary btn-sm"
+                href="https://play.google.com/store/apps/developer?id=Stompai"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Google Play
+              </a>
+            </div>
           </article>
 
-          <article class="panel accent">
-            <p class="eyebrow">Replace before launch</p>
-            <ul class="checklist">
-              <li>Google Play app URL</li>
-              <li>Final app description</li>
-              <li>Support email or website</li>
-              <li>Privacy policy link</li>
-              <li>Real screenshots if you want them on-page</li>
-            </ul>
+          <article class="app-card">
+            <div class="app-card-icon bellalingua-icon">BL</div>
+            <div class="app-card-body">
+              <h3>BellaLingua</h3>
+              <p class="app-tagline">Language learning, beautifully simple.</p>
+              <p>
+                Pick up a new language at your own pace with bite-sized lessons, intuitive practice sessions, and a clean interface that keeps you coming back.
+              </p>
+              <a
+                class="btn btn-primary btn-sm"
+                href="https://play.google.com/store/apps/developer?id=Stompai"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Google Play
+              </a>
+            </div>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="section support-section">
-          <div class="section-heading">
-            <p class="eyebrow">Support</p>
-            <h2>Contact and privacy</h2>
-          </div>
+      <section class="values-section">
+        <div class="section-header">
+          <p class="eyebrow">Our Principles</p>
+          <h2>What we believe in</h2>
+        </div>
 
-          <div class="support-grid">
-            <article class="panel">
-              <h3>Support</h3>
-              <p>Email: <a href="mailto:support@tribalview.app">support@tribalview.app</a></p>
-              <p>Website: <a href="https://example.com" target="_blank" rel="noreferrer">example.com</a></p>
-            </article>
-            <article class="panel">
-              <h3>Privacy policy</h3>
-              <p>
-                Add your privacy policy here once it is published.
-              </p>
-              <p>
-                <a href="https://example.com/privacy" target="_blank" rel="noreferrer">View privacy policy</a>
-              </p>
-            </article>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>Privacy first</h3>
+            <p>We use Firebase Analytics and Crashlytics to keep apps stable. That's it. Your data stays on your device &mdash; we don't collect, store, or sell it.</p>
           </div>
-        </section>
-      </main>
-    </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3>Respect your time</h3>
+            <p>No onboarding walls, no feature overload. Open the app, do what you came for, move on with your day.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+            </div>
+            <h3>Always improving</h3>
+            <p>We ship updates regularly, listen to feedback, and keep our apps lean and reliable across devices.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-card">
+          <h2>Find us on Google Play</h2>
+          <p>All Stompai apps are available on the Google Play Store. Download, try, and let us know what you think.</p>
+          <a
+            class="btn btn-primary"
+            href="https://play.google.com/store/apps/developer?id=Stompai"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View all apps on Google Play
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="brand">
+            <span class="brand-icon">S</span>
+            <span>stompai</span>
+          </a>
+          <p class="footer-copy">Focused apps. Honest practices.</p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="mailto:support@stompai.com">Contact</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
