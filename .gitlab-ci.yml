@@ -3,6 +3,7 @@ pages:
   script:
     - mkdir -p public
     - cp index.html styles.css privacy.html terms.html public/
+    - cp -r images public/
   artifacts:
     paths:
       - public
