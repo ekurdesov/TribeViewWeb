@@ -266,13 +266,14 @@ h1 {
 
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .app-card {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 20px;
   padding: 32px;
   border-radius: var(--radius-lg);
   background: var(--surface);
@@ -293,6 +294,20 @@ h1 {
   border-radius: 18px;
   object-fit: cover;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.app-icon-round {
+  border-radius: 50%;
+}
+
+.btn-garmin {
+  background: #007cc3;
+  box-shadow: 0 0 24px rgba(0, 124, 195, 0.3);
+}
+
+.btn-garmin:hover {
+  background: #0091e5;
+  box-shadow: 0 0 36px rgba(0, 124, 195, 0.4);
 }
 
 .app-card-body h3 {
@@ -506,9 +521,13 @@ h1 {
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .app-grid {
     grid-template-columns: 1fr;
+  }
+
+  .app-card {
+    flex-direction: row;
   }
 
   .values-grid {
